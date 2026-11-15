@@ -2,47 +2,44 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Học Toán cùng Vui Làm Toán!</title>
 
-  <!-- ================= CẤU HÌNH LOGO & ICON (FAVICON) ================= -->
-  <!-- 1. Icon hiển thị trên Tab trình duyệt máy tính & điện thoại -->
+  <!-- Favicon & PWA App Icons cho cả Điện thoại và Máy tính -->
   <link rel="icon" type="image/png" href="https://i.postimg.cc/4dQvycKW/Gemini-Generated-Image-4rmpol4rmpol4rmp.png">
   <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/4dQvycKW/Gemini-Generated-Image-4rmpol4rmpol4rmp.png">
-
-  <!-- 2. Icon khi học sinh lưu ra màn hình chính điện thoại (Android & iPhone) -->
   <link rel="apple-touch-icon" href="https://i.postimg.cc/4dQvycKW/Gemini-Generated-Image-4rmpol4rmpol4rmp.png">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Vui Làm Toán">
   <meta name="application-name" content="Vui Làm Toán">
-  <meta name="theme-color" content="#2563eb">
-
-  <!-- 3. Ảnh thumbnail hiển thị khi gửi link qua Zalo / Facebook / Messenger -->
-  <meta property="og:title" content="Học Toán cùng Vui Làm Toán!">
-  <meta property="og:description" content="Hệ thống luyện thi và ngân hàng đề thi Toán THPT chuẩn cấu trúc mới 2025.">
-  <meta property="og:image" content="https://i.postimg.cc/4dQvycKW/Gemini-Generated-Image-4rmpol4rmpol4rmp.png">
+  <meta name="theme-color" content="#ffffff">
 
   <style>
-    * { box-sizing: border-box; }
-    html, body {
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+    html, body {
       width: 100%;
       height: 100%;
+      height: 100dvh; /* Chiều cao linh hoạt chuẩn 100% cho mọi màn hình điện thoại */
       overflow: hidden;
-      background-color: #f8fafc;
+      background-color: #ffffff; /* Nền trắng liền mạch, không còn dải đen/tối */
     }
     
-    /* Khung hiển thị Web App toàn màn hình, giữ nguyên thanh tiêu đề */
+    /* Khung iframe toàn màn hình 100% chuẩn xác */
     #appFrame {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      height: 100dvh;
       border: none;
       outline: none;
+      display: block;
     }
 
     #loadingCover {
