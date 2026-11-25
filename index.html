@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Học Toán cùng Vui Làm Toán!</title>
 
-  <!-- Favicon & PWA App Icons cho cả Điện thoại và Máy tính -->
-  <link rel="icon" type="image/png" href="https://i.postimg.cc/4dQvycKW/Gemini-Generated-Image-4rmpol4rmpol4rmp.png">
-  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/4dQvycKW/Gemini-Generated-Image-4rmpol4rmpol4rmp.png">
-  <link rel="apple-touch-icon" href="https://i.postimg.cc/4dQvycKW/Gemini-Generated-Image-4rmpol4rmpol4rmp.png">
+  <!-- ================= FAVICON TỪ CHÍNH KHO GITHUB (CÙNG TÊN MIỀN, KHÔNG BỊ CHẶN) ================= -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Vui Làm Toán">
@@ -24,12 +24,10 @@
     html, body {
       width: 100%;
       height: 100%;
-      height: 100dvh; /* Chiều cao linh hoạt chuẩn 100% cho mọi màn hình điện thoại */
+      height: 100dvh;
       overflow: hidden;
-      background-color: #ffffff; /* Nền trắng liền mạch, không còn dải đen/tối */
+      background-color: #ffffff;
     }
-    
-    /* Khung iframe toàn màn hình 100% chuẩn xác */
     #appFrame {
       position: fixed;
       top: 0;
@@ -41,7 +39,6 @@
       outline: none;
       display: block;
     }
-
     #loadingCover {
       position: fixed;
       inset: 0;
@@ -80,7 +77,7 @@
     id="appFrame"
     src="https://script.google.com/macros/s/AKfycbxf-cEV4zrTBbAM1AAaHsy3y6FXGNA0efRvtw_glmbJtLhbtASmfO6CW6LLAu0sumjDAA/exec" 
     allow="clipboard-write; fullscreen"
-    onload="document.getElementById('loadingCover').style.opacity='0'; setTimeout(()=>document.getElementById('loadingCover').style.display='none', 400);">
+    onload="document.getElementById('loadingCover').style.opacity='0'; setTimeout(function(){ document.getElementById('loadingCover').style.display='none'; }, 400);">
   </iframe>
 
 </body>
